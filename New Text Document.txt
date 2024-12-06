@@ -1,0 +1,65 @@
+# Amazon E-Commerce Automation Project Using Selenium with Page Object Model (POM)
+
+## 1. Project Overview
+This project automates testing workflows for the Amazon e-commerce website using Selenium WebDriver and Python. The Page Object Model (POM) design pattern is implemented to enhance code maintainability, reusability, and readability.
+
+## 2. Project Structure
+The following folders and files are included in the project:
+
+### a. `pages/`
+Contains Page Object classes that represent individual pages on the Amazon website.
+- **home_page.py**: Encapsulates locators and methods for the Amazon Home Page (e.g., search functionality).
+- **login_page.py**: Encapsulates locators and methods for the Login Page.
+
+### b. `tests/`
+Contains test scripts that automate test cases.
+- **test_login.py**: Tests the login functionality of the Amazon website.
+- **test_search.py**: Tests the search functionality for products.
+
+### c. `utils/`
+Contains helper scripts and reusable components.
+- **browser_config.py**: Provides browser configuration and WebDriver setup.
+
+### d. `screenshots/`
+Stores screenshots captured during test execution. This folder is empty by default and will populate automatically if `save_screenshot()` is called in a test script.
+
+### e. `venv/`
+Contains the Python virtual environment for dependency isolation (not pushed to GitHub due to `.gitignore`).
+
+## 3. Prerequisites
+- **Python 3.12** or above
+- **Google Chrome** browser
+- **ChromeDriver** (ensure compatibility with your Chrome version)
+- **Python Libraries**:
+  - selenium
+  - pytest
+
+Install required dependencies using:
+
+
+
+4. Set up a virtual environment (optional but recommended):
+
+
+
+
+
+5. View screenshots (if applicable) in the `screenshots/` folder.
+
+## 5. Additional Notes
+- Update the **ChromeDriver** path in `browser_config.py` if needed.
+- Modify test data (e.g., login credentials) directly in the test scripts before running tests.
+- For large-scale projects, consider implementing environment variables for sensitive data (e.g., `.env` file).
+
+## 6. Key Features
+- **Automation Framework**: Implements POM for scalable and maintainable automation.
+- **Test Coverage**: Includes login and product search workflows.
+- **Extensibility**: Additional pages and test cases can be added easily.
+
+## 7. GitHub Repository
+- Link: https://github.com/yourusername/amazon-automation-pom
+
+## 8. Contact Information
+For questions or support, contact:
+- **Name**: Srinivasa Rao Thokala
+- **Email**: srinivasaraothokala62@gmail.com
